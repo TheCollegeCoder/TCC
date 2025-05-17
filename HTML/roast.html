@@ -1,0 +1,13 @@
+<button onclick="roast()">Roast Me</button>
+<p id="output"></p>
+<script>
+let burns = [
+  "Your code needs therapy.",
+  "Even ChatGPT gave up on you.",
+  "You debug like my grandma types.",
+];
+function roast() {
+  document.getElementById("output").innerText = 
+    burns[Math.floor(Math.random()*burns.length)];
+}
+</script>
